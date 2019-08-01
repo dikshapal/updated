@@ -1,0 +1,96 @@
+
+
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body {font-family: "Lato", sans-serif;}
+    
+    .sidebar {
+      height: 100%;
+      width: 300px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      padding-top: 16px;
+    }
+    
+    .sidebar a {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #818181;
+      display: block;
+    }
+    
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
+    
+    .main {
+      margin-left: 300px; /* Same as the width of the sidenav */
+      padding: 0px 10px;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .sidebar {padding-top: 15px;}
+      .sidebar a {font-size: 18px;}
+    }
+    </style>
+    </head>
+    <body>
+  
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#login">Offers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#profile">Gift Cards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+            
+          </ul>
+          <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade show active" id="home">
+              <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+            </div>
+           
+          </div>
+    
+    <div class="sidebar">
+      <a href="#home"><i class="fa fa-fw fa-home"></i> Home</a>
+     
+      <div class="dropdown">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+              <a href="#shopbycategory"><i class="fa fa-fw fa-shopping-basket"></i> Shop By Category</a>
+          </button>
+          <div class="dropdown-menu">
+           <button><a class="dropdown-item" (click)="fandv()">Fruits & Veggies</a> <br></button> 
+            <a class="dropdown-item" href="#">Bakery Products</a> <br>
+            <a class="dropdown-item" href="#">Packaged Food</a> <br>
+            <a class="dropdown-item" href="#">Frozen Food</a> <br>
+            <a class="dropdown-item" href="#">Cereals</a> <br>
+            <a class="dropdown-item" href="#">Miscellaneous</a> <br>
+          </div>
+        </div> 
+      <a href="#services"><i class="fa fa-fw fa-wrench"></i> Services</a>
+      
+      <a href="#account"><i class="fa fa-fw fa-user"></i> Account</a>
+      <a href="cart"><i class="fa fa-fw fa-cart-plus"></i> Cart</a>
+      <a href="#contactus"><i class="fa fa-fw fa-envelope"></i> ContactUs</a>
+    </div>
+    
+    <div class="main">
+      
+    </div>
+         
+    </body>
+    </html> 
+    
+  
