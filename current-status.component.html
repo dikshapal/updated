@@ -1,0 +1,20 @@
+
+<div class="col-md-6">
+    <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>Account Id</th>
+      <th>Amount Sanction</th>
+      <th>Amount Remaining</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cs of currentStatus">
+            <td>{{cs.accountId}}</td>
+            <td>{{cs.amountSanction}}</td>
+            <td>{{cs.amountremaining}}</td>
+            </tr>
+    </tbody>
+      </table>
+  
+    </div>
